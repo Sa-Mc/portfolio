@@ -1,0 +1,273 @@
+---
+import { Image } from "@astrojs/image/components";
+import Github from "../components/github.astro";
+import Source from "../components/source.astro";
+import Youtube from "../components/youtube.astro";
+---
+
+<html lang="en" class="bg-base-200 scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ToastedToast</title>
+    <meta name="title" content="ToastedToast" />
+    <meta
+      name="description"
+      content="The official portfolio of ToastedToast/Toastify."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://portfolio.toastify.tk" />
+    <meta
+      property="og:description"
+      content="The official portfolio of ToastedToast/Toastify."
+    />
+    <meta property="twitter:title" content="ToastedToast" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://portfolio.toastify.tk" />
+    <meta name="theme-color" content="#fb923c" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <div class="mx-0 sm:mx-auto max-w-2xl">
+      <header
+        class="navbar h-16 w-full justify-between p-4 my-4 rounded-lg bg-base-100"
+      >
+        <nav class="flex text-lg">
+          <ul class="menu menu-horizontal">
+            <li>
+              <a class="font-medium rounded-lg" href="/">Home</a>
+            </li>
+            <li>
+              <a class="font-medium rounded-lg" href="#languages">Languages</a>
+            </li>
+            <li>
+              <a class="font-medium rounded-lg" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section
+          class="align-center flex w-full flex-col justify-center px-4 pb-4 sm:flex-row sm:p-8"
+        >
+          <div class="mb-2 h-32 w-32 sm:mb-0 sm:h-40 sm:w-40">
+            <Image
+              src="/toastedtoast.jpg"
+              alt="ToastedToast Logo"
+              format="webp"
+              width={256}
+              height={256}
+              class="rounded-full"
+            />
+          </div>
+          <div class="flex flex-col sm:pl-8">
+            <h1
+              class="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-300 to-orange-500"
+            >
+              ToastedToast
+            </h1>
+            <p class="py-1 pr-2 sm:max-w-md sm:pr-0">
+              I'm a young developer that makes Discord bots and websites. I love
+              taking existing ideas and making them better.
+            </p>
+          </div>
+        </section>
+        <section id="languages" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
+          <h2 class="mb-4 text-xl font-bold">Languages</h2>
+          <div class="flex justify-center gap-4">
+            <a
+              href="https://en.wikipedia.org/wiki/HTML"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="HTML"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML"
+                width="55"
+                height="55"
+              />
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/CSS"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="CSS"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS"
+                width="55"
+                height="55"
+              />
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/Tailwind_CSS"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Tailwind CSS"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                alt="Tailwind CSS"
+                width="55"
+                height="55"
+              />
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/JavaScript"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="JavaScript"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                width="55"
+                height="55"
+              />
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/TypeScript"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="TypeScript"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+                width="55"
+                height="55"
+              />
+            </a>
+          </div>
+        </section>
+        <section id="projects" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
+          <h2 class="mb-4 text-xl font-bold">Projects</h2>
+          <div class="grid gap-4">
+            <div
+              class="card rounded-box w-full bg-base-100 shadow-xl transition-all ease-in-out hover:scale-105 hover:brightness-105"
+            >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-body"
+                href="https://countify.cf"
+              >
+                <h2 class="card-title font-bold text-3xl">
+                  <Image
+                    src="https://countify.cf/public/logo.png"
+                    alt="Countify Logo"
+                    format="webp"
+                    width={80}
+                    height={80}
+                    class="w-[40px] h-[40px] rounded-full"
+                  /> Countify
+                </h2>
+                <p>The only counting bot you need.</p>
+                <div class="card-actions mt-2">
+                  <span class="text-sm font-light">JavaScript</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="card rounded-box w-full bg-base-100 shadow-xl transition-all ease-in-out hover:scale-105 hover:brightness-105"
+            >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-body"
+                href="https://discord.com/api/oauth2/authorize?client_id=1077159995487035402&permissions=19456&scope=bot%20applications.commands"
+                ><h2 class="flex justify-between">
+                  <div class="card-title font-bold text-3xl">
+                    <Image
+                      src="/statistical.png"
+                      alt="Statistical Logo"
+                      format="webp"
+                      width={80}
+                      height={80}
+                      class="w-[40px] h-[40px] rounded-full"
+                    /> Statistical
+                  </div>
+                </h2>
+                <p>
+                  Track your favorite YouTuber's subscriber counts, view
+                  statistics about a server and it's users, and more.
+                </p>
+                <div class="card-actions mt-2">
+                  <span class="text-sm font-light">JavaScript</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="card rounded-box w-full bg-base-100 shadow-xl transition-all ease-in-out hover:scale-105 hover:brightness-105"
+            >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-body"
+                href="https://toastify.tk"
+              >
+                <h2 class="card-title font-bold text-3xl">
+                  <Image
+                    src="https://toastify.tk/toaster.png"
+                    alt="Toastify Logo"
+                    format="webp"
+                    width={80}
+                    height={80}
+                    class="w-[40px] h-[40px] rounded-full"
+                  /> toastify.tk
+                </h2>
+                <p>My personal website that features all my socials.</p>
+                <div class="card-actions mt-2">
+                  <span class="text-sm font-light">Next.js (TypeScript)</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="items-center p-4 sm:flex sm:flex-row-reverse sm:justify-between sm:p-4 my-4 rounded-lg bg-base-100"
+      >
+        <div
+          class="grid-flow-col gap-2 md:place-self-center md:justify-self-end pr-1"
+        >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Go to GitHub"
+            aria-label="Go to GitHub"
+            class="btn-ghost btn-circle btn"
+            href="https://github.com/ToastifyDev"
+          >
+            <Github />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Go to YouTube"
+            aria-label="Go to YouTube"
+            class="btn-ghost btn-circle btn"
+            href="https://youtube.com/@ToastedDev"
+          >
+            <Youtube />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View Source"
+            aria-label="View Source"
+            class="btn-ghost btn-circle btn"
+            href="https://github.com/ToastifyDev/portfolio"
+          >
+            <Source />
+          </a>
+        </div>
+        <div class="items-center pl-4">
+          &copy; ToastedToast {new Date().getFullYear()}. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
