@@ -1,6 +1,7 @@
 ---
 import { Image } from "@astrojs/image/components";
 import Github from "../components/github.astro";
+import Email from "../components/email.astro";
 ---
 
 <html lang="en" class="bg-base-200 scroll-smooth">
@@ -75,7 +76,7 @@ import Github from "../components/github.astro";
           </div>
         </section>
         <section id="tools" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
-          <h2 class="mb-4 text-xl font-mono font-bold">Tools</h2>
+          <h2 class="mb-4 text-2xl font-mono font-bold">Tools</h2>
 
           <div class="flex justify-center gap-4">
             <a
@@ -152,7 +153,19 @@ import Github from "../components/github.astro";
               />
             </a>
             <a
-              href="https://en.wikipedia.org/wiki/Tailwind_CSS"
+              href="https://astro.build/"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Astro"
+            >
+              <img
+                src="https://astro.build/assets/press/astro-icon-light.png"
+                alt="Astro"
+                width="50"
+                height="50"
+              />
+            </a>
+            <a
+              href="https://tailwindcss.com/"
               class="transition-all ease-in-out hover:scale-[1.18]"
               aria-label="Tailwind CSS"
             >
@@ -165,6 +178,7 @@ import Github from "../components/github.astro";
             </a>
           </div>
         </section>
+        <div></div>
         <section id="projects" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
           <h2 class="mb-4 text-2xl font-mono font-bold">Projects</h2>
           <div class="grid gap-4">
@@ -211,7 +225,7 @@ import Github from "../components/github.astro";
             class="btn-ghost btn-circle btn"
             href="mailto:hello@sammc.net"
           >
-            <Github />
+            <Email />
           </a>
           <a
             target="_blank"
