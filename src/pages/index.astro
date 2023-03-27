@@ -1,8 +1,6 @@
 ---
 import { Image } from "@astrojs/image/components";
 import Github from "../components/github.astro";
-import Source from "../components/source.astro";
-import Youtube from "../components/youtube.astro";
 ---
 
 <html lang="en" class="bg-base-200 scroll-smooth">
@@ -34,13 +32,17 @@ import Youtube from "../components/youtube.astro";
         <nav class="flex text-lg">
           <ul class="menu menu-horizontal">
             <li>
-              <a class="font-medium rounded-lg" href="/">Home</a>
+              <a class="font-mono font-medium rounded-lg" href="/">Home</a>
             </li>
             <li>
-              <a class="font-medium rounded-lg" href="#languages">Languages</a>
+              <a class="font-mono font-medium rounded-lg" href="#languages"
+                >Tools</a
+              >
             </li>
             <li>
-              <a class="font-medium rounded-lg" href="#projects">Projects</a>
+              <a class="font-mono font-medium rounded-lg" href="/projects"
+                >Projects</a
+              >
             </li>
           </ul>
         </nav>
@@ -71,11 +73,11 @@ import Youtube from "../components/youtube.astro";
             </p>
           </div>
         </section>
-        <section id="languages" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
-          <h2 class="mb-4 text-xl font-bold">Languages</h2>
+        <section id="tools" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
+          <h2 class="mb-4 text-xl font-bold">Tools</h2>
           <div class="flex justify-center gap-4">
             <a
-              href="https://en.wikipedia.org/wiki/HTML"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
               class="transition-all ease-in-out hover:scale-[1.18]"
               aria-label="HTML"
             >
@@ -87,13 +89,100 @@ import Youtube from "../components/youtube.astro";
               />
             </a>
             <a
-              href="https://en.wikipedia.org/wiki/CSS"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
               class="transition-all ease-in-out hover:scale-[1.18]"
               aria-label="CSS"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
                 alt="CSS"
+                width="55"
+                height="55"
+              />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="JavaScript"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                width="55"
+                height="55"
+              />
+            </a>
+            <a
+              href="https://www.typescriptlang.org/"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="TypeScript"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+                width="55"
+                height="55"
+              />
+            </a>
+
+            <a
+              href="https://aws.amazon.com/"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Amazon Web Services"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+                alt="Amazon Web Services"
+                width="55"
+                height="55"
+              />
+            </a>
+            <a
+              href="https://digitalocean.com/"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Digital Ocean"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg"
+                alt="Digital Ocean"
+                width="55"
+                height="55"
+              />
+            </a>
+
+            <a
+              href="https://cloud.google.com/"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Google Cloud Platform"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+                alt="Google Cloud Platform"
+                width="55"
+                height="55"
+              />
+            </a>
+            <a
+              href="https://figma.com"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Figma"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                alt="Figma"
+                width="55"
+                height="55"
+              />
+            </a>
+
+            <a
+              href="https://jamstack.org/"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Jamstack"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jamstack/jamstack-original.svg"
+                alt="Jamstack"
                 width="55"
                 height="55"
               />
@@ -106,30 +195,6 @@ import Youtube from "../components/youtube.astro";
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                 alt="Tailwind CSS"
-                width="55"
-                height="55"
-              />
-            </a>
-            <a
-              href="https://en.wikipedia.org/wiki/JavaScript"
-              class="transition-all ease-in-out hover:scale-[1.18]"
-              aria-label="JavaScript"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                alt="JavaScript"
-                width="55"
-                height="55"
-              />
-            </a>
-            <a
-              href="https://en.wikipedia.org/wiki/TypeScript"
-              class="transition-all ease-in-out hover:scale-[1.18]"
-              aria-label="TypeScript"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                alt="TypeScript"
                 width="55"
                 height="55"
               />
@@ -230,36 +295,26 @@ import Youtube from "../components/youtube.astro";
           <a
             target="_blank"
             rel="noopener noreferrer"
-            title="Go to GitHub"
-            aria-label="Go to GitHub"
+            title="Email"
+            aria-label="Email"
             class="btn-ghost btn-circle btn"
-            href="https://github.com/ToastifyDev"
+            href="mailto:hello@sammc.net"
           >
             <Github />
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            title="Go to YouTube"
-            aria-label="Go to YouTube"
+            title="Go to GitHub"
+            aria-label="Go to GitHub"
             class="btn-ghost btn-circle btn"
-            href="https://youtube.com/@ToastedDev"
+            href="https://github.com/sa-mc"
           >
-            <Youtube />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            title="View Source"
-            aria-label="View Source"
-            class="btn-ghost btn-circle btn"
-            href="https://github.com/ToastifyDev/portfolio"
-          >
-            <Source />
+            <Github />
           </a>
         </div>
         <div class="items-center pl-4">
-          &copy; ToastedToast {new Date().getFullYear()}. All rights reserved.
+          &copy; SamMc {new Date().getFullYear()}. All rights reserved.
         </div>
       </footer>
     </div>
