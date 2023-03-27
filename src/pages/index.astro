@@ -51,15 +51,16 @@ import Github from "../components/github.astro";
         <section
           class="align-center flex w-full flex-col justify-center px-4 pb-4 sm:flex-row sm:p-8"
         >
-          <div class="mb-2 h-32 w-32 sm:mb-0 sm:h-40 sm:w-40">
-            <Image
-              src="/memoji.jpg"
-              alt="SamMc Memoji"
-              format="webp"
-              width={256}
-              height={256}
-              class="rounded-full"
-            />
+          <div class="avatar">
+            <div class="w-32 mask mask-squircle">
+              <Image
+                src="/memoji.jpg"
+                alt="SamMc Memoji"
+                format="webp"
+                width={256}
+                height={256}
+              />
+            </div>
           </div>
           <div class="flex flex-col sm:pl-8">
             <h1
@@ -74,7 +75,8 @@ import Github from "../components/github.astro";
           </div>
         </section>
         <section id="tools" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
-          <h2 class="mb-4 text-xl font-bold">Tools</h2>
+          <h2 class="mb-4 text-xl font-mono font-bold">Tools</h2>
+
           <div class="flex justify-center gap-4">
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML"
@@ -124,44 +126,6 @@ import Github from "../components/github.astro";
                 height="55"
               />
             </a>
-
-            <a
-              href="https://aws.amazon.com/"
-              class="transition-all ease-in-out hover:scale-[1.18]"
-              aria-label="Amazon Web Services"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
-                alt="Amazon Web Services"
-                width="55"
-                height="55"
-              />
-            </a>
-            <a
-              href="https://digitalocean.com/"
-              class="transition-all ease-in-out hover:scale-[1.18]"
-              aria-label="Digital Ocean"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg"
-                alt="Digital Ocean"
-                width="55"
-                height="55"
-              />
-            </a>
-
-            <a
-              href="https://cloud.google.com/"
-              class="transition-all ease-in-out hover:scale-[1.18]"
-              aria-label="Google Cloud Platform"
-            >
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
-                alt="Google Cloud Platform"
-                width="55"
-                height="55"
-              />
-            </a>
             <a
               href="https://figma.com"
               class="transition-all ease-in-out hover:scale-[1.18]"
@@ -202,33 +166,8 @@ import Github from "../components/github.astro";
           </div>
         </section>
         <section id="projects" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
-          <h2 class="mb-4 text-xl font-bold">Projects</h2>
+          <h2 class="mb-4 text-2xl font-mono font-bold">Projects</h2>
           <div class="grid gap-4">
-            <div
-              class="card rounded-box w-full bg-base-100 shadow-xl transition-all ease-in-out hover:scale-105 hover:brightness-105"
-            >
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                class="card-body"
-                href="https://countify.cf"
-              >
-                <h2 class="card-title font-bold text-3xl">
-                  <Image
-                    src="https://countify.cf/public/logo.png"
-                    alt="Countify Logo"
-                    format="webp"
-                    width={80}
-                    height={80}
-                    class="w-[40px] h-[40px] rounded-full"
-                  /> Countify
-                </h2>
-                <p>The only counting bot you need.</p>
-                <div class="card-actions mt-2">
-                  <span class="text-sm font-light">JavaScript</span>
-                </div>
-              </a>
-            </div>
             <div
               class="card rounded-box w-full bg-base-100 shadow-xl transition-all ease-in-out hover:scale-105 hover:brightness-105"
             >
@@ -246,40 +185,12 @@ import Github from "../components/github.astro";
                       width={80}
                       height={80}
                       class="w-[40px] h-[40px] rounded-full"
-                    /> Statistical
+                    /> Project
                   </div>
                 </h2>
-                <p>
-                  Track your favorite YouTuber's subscriber counts, view
-                  statistics about a server and it's users, and more.
-                </p>
+                <p>Lorem ipsom dolor!</p>
                 <div class="card-actions mt-2">
-                  <span class="text-sm font-light">JavaScript</span>
-                </div>
-              </a>
-            </div>
-            <div
-              class="card rounded-box w-full bg-base-100 shadow-xl transition-all ease-in-out hover:scale-105 hover:brightness-105"
-            >
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                class="card-body"
-                href="https://toastify.tk"
-              >
-                <h2 class="card-title font-bold text-3xl">
-                  <Image
-                    src="https://toastify.tk/toaster.png"
-                    alt="Toastify Logo"
-                    format="webp"
-                    width={80}
-                    height={80}
-                    class="w-[40px] h-[40px] rounded-full"
-                  /> toastify.tk
-                </h2>
-                <p>My personal website that features all my socials.</p>
-                <div class="card-actions mt-2">
-                  <span class="text-sm font-light">Next.js (TypeScript)</span>
+                  <span class="text-sm font-light">Tools</span>
                 </div>
               </a>
             </div>
