@@ -1,0 +1,24 @@
+---
+import { Image } from "@astrojs/image/components";
+
+import Header from "../components/head.astro";
+
+export interface Props {
+    description: string;
+    title: string;
+    path: string;
+}
+const props = Astro.props;
+
+import Navbar from "../components/nav.astro";
+import Footer from "../components/foot.astro";
+---
+
+<html lang="en" class="bg-base-200 scroll-smooth font-mono">
+    <Header {...props} />
+    <Navbar />
+    <body class="mx-0 sm:mx-auto max-w-2xl">
+        <slot />
+        <Footer />
+    </body>
+</html>
