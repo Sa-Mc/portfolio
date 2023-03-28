@@ -1,7 +1,6 @@
 ---
 import { Image } from "@astrojs/image/components";
-import Github from "../components/github.astro";
-import Email from "../components/email.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <html lang="en" class="bg-base-200 scroll-smooth">
@@ -36,13 +35,8 @@ import Email from "../components/email.astro";
               <a class="font-mono font-medium rounded-lg" href="/">Home</a>
             </li>
             <li>
-              <a class="font-mono font-medium rounded-lg" href="#languages"
-                >Tools</a
-              >
-            </li>
-            <li>
-              <a class="font-mono font-medium rounded-lg" href="/projects"
-                >Projects</a
+              <a class="font-mono font-medium rounded-lg" href="aboutme"
+                >About</a
               >
             </li>
           </ul>
@@ -87,6 +81,42 @@ import Email from "../components/email.astro";
               <img
                 src="https://cdn.filepicker.io/api/file/jZDILlufSOSDOkuJTZ7J"
                 alt="Tableau"
+                width="55"
+                height="55"
+              />
+            </a>
+            <a
+              href="https://www.postman.com/"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Postman"
+            >
+              <img
+                src="https://www.svgrepo.com/show/354202/postman-icon.svg"
+                alt="Postman"
+                width="55"
+                height="55"
+              />
+            </a>
+            <a
+              href="https://aws.amazon.com/"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Amazon Web Services"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+                alt="Amazon Web Services"
+                width="55"
+                height="55"
+              />
+            </a>
+            <a
+              href="https://www.looker.com/"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Looker"
+            >
+              <img
+                src="https://www.svgrepo.com/show/354012/looker-icon.svg"
+                alt="Looker"
                 width="55"
                 height="55"
               />
@@ -207,9 +237,20 @@ import Email from "../components/email.astro";
                 height="55"
               />
             </a>
+            <a
+              href="https://www.adobe.com/creativecloud.html"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Adobe Creative Cloud"
+            >
+              <img
+                src="https://www.svgrepo.com/show/452148/adobe-creative-cloud.svg"
+                alt="Adobe Creative Cloud"
+                width="55"
+                height="55"
+              />
+            </a>
           </div>
         </section>
-        <div></div>
         <section id="projects" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
           <h2 class="mb-4 text-2xl font-mono font-bold">Projects</h2>
           <div class="grid gap-4">
@@ -241,38 +282,8 @@ import Email from "../components/email.astro";
             </div>
           </div>
         </section>
+        <Footer />
       </main>
-      <footer
-        class="items-center p-4 sm:flex sm:flex-row-reverse sm:justify-between sm:p-4 my-4 rounded-lg bg-base-100"
-      >
-        <div
-          class="grid-flow-col gap-2 md:place-self-center md:justify-self-end pr-1"
-        >
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Email"
-            aria-label="Email"
-            class="btn-ghost btn-circle btn"
-            href="mailto:hello@sammc.net"
-          >
-            <Email />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Go to GitHub"
-            aria-label="Go to GitHub"
-            class="btn-ghost btn-circle btn"
-            href="https://github.com/sa-mc"
-          >
-            <Github />
-          </a>
-        </div>
-        <div class="items-center pl-4">
-          &copy; SamMc {new Date().getFullYear()}. All rights reserved.
-        </div>
-      </footer>
     </div>
   </body>
 </html>
