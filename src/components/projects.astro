@@ -1,0 +1,35 @@
+---
+import { Image } from "@astrojs/image/components";
+---
+
+<section id="projects" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
+    <h2 class="mb-4 text-3xl font-sans font-bold">Projects</h2>
+    <div class="grid gap-4">
+        <div
+            class="card rounded-box w-full bg-base-100 shadow-xl transition-all ease-in-out hover:scale-105 hover:brightness-105"
+        >
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-body"
+                href="#"
+                ><h3 class="flex justify-between">
+                    <div class="card-title font-bold text-3xl">
+                        <Image
+                            src="/statistical.png"
+                            alt="Statistical Logo"
+                            format="webp"
+                            width={80}
+                            height={80}
+                            class="w-[40px] h-[40px] rounded-full"
+                        /> First
+                    </div>
+                </h3>
+                <p class="font-mono">Lorem ipsom dolor!</p>
+                <div class="card-actions mt-2">
+                    <span class="font-mono text-sm font-light">Tools Used</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
