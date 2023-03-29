@@ -1,27 +1,27 @@
 ---
 export interface Props {
-    description: string;
-    title: string;
-    path: string;
+  description: string;
+  title: string;
+  path: string;
 }
 const { description, title, path } = Astro.props;
 ---
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>SamMc - {title}</title>
-    <meta name="title" content="SamMc {title}" />
-    <meta name="description" content={description} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={`https://imsammc.dev${path}`} />
-    <meta property="og:description" content={description} />
-    <meta property="twitter:title" content="SamMc - {title}" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://imsammc.dev" />
-    <meta name="theme-color" content="#fb923c" />
-    <meta name="language" content="English" />
-    <meta name="keywords" content="sam, sammc, sa-mc, astraios" />
-    <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <title>SamMc - {title}</title>
+  <meta name="title" content="SamMc {title}" />
+  <meta name="description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={`https://imsammc.dev${path}`} />
+  <meta property="og:description" content={description} />
+  <meta property="twitter:title" content="SamMc - {title}" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://imsammc.dev" />
+  <meta name="theme-color" content="#fb923c" />
+  <meta name="language" content="English" />
+  <meta name="keywords" content="sam, sammc, sa-mc, astraios" />
+  <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
 </head>
