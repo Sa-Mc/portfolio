@@ -11,6 +11,5 @@ import image from "@astrojs/image";
 export default defineConfig({
   site: "https://launchpad.sammc.net",
   integrations: [tailwind(), image()]
-  output: 'server',
   adapter: netlify(),
 });
