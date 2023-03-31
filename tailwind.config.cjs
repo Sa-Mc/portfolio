@@ -19,9 +19,8 @@ module.exports = {
 "success": "#0B4133",
 "warning": "#F2C22E",
 "error": "#6E1530",
-"p": "#B7C6D3",
+"p": "#A3B0BE",
 "a": "#E3E1DE",
-"offwhite": "#E3E1DE"
           },
         },
       ],
