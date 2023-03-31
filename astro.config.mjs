@@ -12,4 +12,5 @@ export default defineConfig({
   site: "https://launchpad.sammc.net",
   integrations: [tailwind(), image()],
   adapter: netlify(),
+  output: "server",
 });
