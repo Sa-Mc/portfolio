@@ -1,6 +1,7 @@
 ---
 import Github from "../components/github.astro";
 import Email from "../components/email.astro";
+import Mastodon from "../components/mastodon.astro";
 ---
 
 <footer
@@ -28,6 +29,16 @@ import Email from "../components/email.astro";
       href="https://github.com/sa-mc"
     >
       <Github />
+    </a>
+        <a
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Go to Mastodon"
+      aria-label="Go to Mastodon"
+      class="btn-ghost btn-circle btn"
+      href="https://mastodon.social/@SamMc"
+    >
+      <Mastodon />
     </a>
   </div>
   <div class="items-center pl-4">
