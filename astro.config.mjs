@@ -1,5 +1,5 @@
 import { defineConfig } from "astro/config";
-// import netlify from "@astrojs/netlify/functions";
+import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 import tailwind from "@astrojs/tailwind";
@@ -11,5 +11,5 @@ import image from "@astrojs/image";
 export default defineConfig({
   site: "https://launchpad.sammc.net",
   integrations: [tailwind(), image()],
- // adapter: netlify(),
+  adapter: netlify(),
 });
