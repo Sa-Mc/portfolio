@@ -6,23 +6,23 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-      themes: [
-        {
-          mytheme: {
-"primary": "#121034",
-"primary-focus": "#302A82",
-"secondary": "#5384E2",
-"accent": "#52E7D6",
-"neutral": "#0B162D",
-"base-100": "#0B0A20",
-"info": "#76A8F1",
-"success": "#0B4133",
-"warning": "#F2C22E",
-"error": "#6E1530",
-"p": "#BAB8E8",
-"a": "#E3E1DE",
-          },
+    themes: [
+      {
+        mytheme: {
+          "primary": "#121034",
+          "primary-focus": "#302A82",
+          "secondary": "#5384E2",
+          "accent": "#52E7D6",
+          "neutral": "#0B162D",
+          "base-100": "#060522",
+          "info": "#76A8F1",
+          "success": "#0B4133",
+          "warning": "#F2C22E",
+          "error": "#6E1530",
+          "p": "#BAB8E8",
+          "a": "#E3E1DE",
         },
-      ],
-    },
+      },
+    ],
+  },
 };
