@@ -1,3 +1,3 @@
-# ToastedToast Portfolio
+# SamMc's Personal Site and Portfolio
 
-The official portfolio of ToastedToast/Toastify. Built with Astro, Tailwind CSS, and Daisy UI.
+Built with [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and [Daisy UI](https://daisyui.com/).

@@ -8,7 +8,6 @@ export interface Props {
   path: string;
 }
 const props = Astro.props;
-
 ---
 
 <Page description="SamMc" title="Data Dev Design" path="/">
@@ -16,12 +15,12 @@ const props = Astro.props;
     <Hero />
     <a
       href="#"
-      class="relative block rounded-md border-t-4 border-sky-700 p-4 shadow-xl sm:p-6 lg:p-8"
+      class="relative block rounded-md border-t-4 border-secondary p-4 shadow-xl sm:p-6 lg:p-8"
     >
       <div class="flex items-center gap-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-8 w-8 text-sky-500"
+          class="h-8 w-8 text-secondary"
           fill="none"
           viewBox="0 0 36 36"
           stroke="currentColor"
@@ -34,7 +33,9 @@ const props = Astro.props;
           ></path>
         </svg>
 
-        <h4 class="text-[#E3E1DE] text-xl font-mono sm:text-xl">Please pardon our dust</h4>
+        <h4 class="text-[#E3E1DE] text-xl font-mono sm:text-xl">
+          Please pardon our dust
+        </h4>
       </div>
 
       <p class="mt-4 font-medium font-mono">

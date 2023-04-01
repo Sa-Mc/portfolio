@@ -5,7 +5,7 @@ import Mastodon from "../components/mastodon.astro";
 ---
 
 <footer
-  class="items-center p-4 sm:flex sm:flex-row-reverse sm:justify-between sm:p-4 my-4 font-mono"
+  class="items-center p-4 sm:flex sm:flex-row-reverse sm:justify-between sm:p-4 my-4 font-mono text-secondary"
 >
   <div
     class="grid-flow-col gap-2 md:place-self-center md:justify-self-end pr-1"
@@ -30,7 +30,7 @@ import Mastodon from "../components/mastodon.astro";
     >
       <Github />
     </a>
-        <a
+    <a
       target="_blank"
       rel="noopener noreferrer"
       title="Go to Mastodon"
@@ -41,7 +41,7 @@ import Mastodon from "../components/mastodon.astro";
       <Mastodon />
     </a>
   </div>
-  <div class="items-center pl-4">
+  <div class="items-center pl-4 text-[#BAB8E8]">
     &copy; SamMc {new Date().getFullYear()}. All rights reserved.
   </div>
 </footer>

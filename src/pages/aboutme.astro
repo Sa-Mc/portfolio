@@ -1,5 +1,6 @@
 ---
 import Page from "../components/pageLayout.astro";
+import Tools from "../components/tools.astro";
 
 export interface Props {
     description: string;
@@ -7,14 +8,10 @@ export interface Props {
     path: string;
 }
 const props = Astro.props;
-
-import Projects from "../components/projects.astro";
-import Tools from "../components/tools.astro";
 ---
 
 <Page description="About SamMc" title="About Me" path="aboutme">
     <main>
-        <Projects />
-        <Tools />
+      <Tools />
     </main>
 </Page>
