@@ -19,7 +19,7 @@ module.exports = {
 "success": "#0B4133",
 "warning": "#F2C22E",
 "error": "#6E1530",
-"p": "#A3B0BE",
+"p": "#BAB8E8",
 "a": "#E3E1DE",
           },
         },
